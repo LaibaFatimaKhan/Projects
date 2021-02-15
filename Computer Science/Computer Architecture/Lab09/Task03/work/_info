@@ -1,0 +1,119 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/LaibaFatimaKhan/Lab09/Task03
+vAdder
+Z1 !s110 1586497273
+!i10b 1
+!s100 BdNmjTh`Q:BAT0e4^[6zj1
+I?fN4;QT8;_mJiA<?gO?h92
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1586486552
+8Adder.v
+FAdder.v
+L0 1
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1586497273.000000
+Z5 !s107 Program_Counter.v|Adder.v|Instruction_Memory.v|Instruction_Fetch.v|tb.v|
+Z6 !s90 -reportprogress|300|tb.v|Instruction_Fetch.v|Instruction_Memory.v|Adder.v|Program_Counter.v|
+!s101 -O0
+!i113 1
+Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@adder
+vInstruction_Fetch
+R1
+!i10b 1
+!s100 50hN[4h7oNI8Pn523iR^P1
+I]jDWh9BfF0[Wfk_2QY3Ba0
+R2
+R0
+w1586495359
+8Instruction_Fetch.v
+FInstruction_Fetch.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+n@instruction_@fetch
+vInstruction_Memory
+R1
+!i10b 1
+!s100 XgK3;6JMiS9n:JEDnc9Qg2
+I@0JNSgZAB4Xk37`CUhP6Q3
+R2
+R0
+w1585830357
+8Instruction_Memory.v
+FInstruction_Memory.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+n@instruction_@memory
+vProgram_Counter
+R1
+!i10b 1
+!s100 PO][7ghThabjX6n]kZ7;i3
+I1aEoIT>_^;=>9_;Ci0YBo3
+R2
+R0
+w1586486439
+8Program_Counter.v
+FProgram_Counter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+n@program_@counter
+vtb
+R1
+!i10b 1
+!s100 ;i`<XZ;512GmIZ=e3cjQb0
+INQ]L_c`5=E[k9AJ0SJNUX3
+R2
+R0
+w1586496774
+8tb.v
+Ftb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7

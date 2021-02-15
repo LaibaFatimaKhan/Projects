@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/LaibaFatimaKhan/Lab10/Task3
+vALU_Control
+Z1 !s110 1586502560
+!i10b 1
+!s100 ?E8DaJMJF7YG1GYS?ESM^3
+IIzezMfPlm2nPdRR`WW_]o2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1586500159
+8ALU_Control.v
+FALU_Control.v
+L0 1
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1586502560.000000
+Z5 !s107 Control_Unit.v|ALU_Control.v|top_control.v|tb.v|
+Z6 !s90 -reportprogress|300|tb.v|top_control.v|ALU_Control.v|Control_Unit.v|
+!s101 -O0
+!i113 1
+Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@a@l@u_@control
+vControl_Unit
+R1
+!i10b 1
+!s100 P;=N=^mi01CKAMgK?:UCI3
+I=O1:5ZkO@08h]?^fzY1;H2
+R2
+R0
+w1586499959
+8Control_Unit.v
+FControl_Unit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+n@control_@unit
+vtb
+R1
+!i10b 1
+!s100 F53Z;:jA5cO;UVMJmGXZ_0
+I>Kdz:i=:[A58S4hJ[TkeV3
+R2
+R0
+w1586502049
+8tb.v
+Ftb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+vtop_control
+R1
+!i10b 1
+!s100 EBW2D=c6S93?ehWBZliCJ3
+I[HFM<CMO^@<l1?F^=:cJ03
+R2
+R0
+w1586501316
+8top_control.v
+Ftop_control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7

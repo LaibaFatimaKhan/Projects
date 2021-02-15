@@ -1,0 +1,59 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Laiba Fatima Khan\Lab01\design
+vD_FF
+V09X<if:HdmG9AJoa7S_:O1
+r1
+!s85 0
+31
+I5^]F:>nJSM=4EO7]=C=;T0
+w1579260284
+8D_FF.v
+FD_FF.v
+L0 1
+Z1 OE;L;6.5c;42
+Z2 o-L mtiAvm -L mtiOvm -L mtiUPF
+n@d_@f@f
+!s100 cPU5FmKUZ:Ocf244hQl1h0
+vripple_carry_counter
+ViJ]Q]zCK]hQHn4aF3e=SG3
+r1
+31
+IH:DeI@zWkgRlHRPeN5f9b0
+w1579259637
+8ripple_carry_counter.v
+Fripple_carry_counter.v
+L0 1
+R1
+R2
+!s85 0
+!s100 Ef5]N@Z@8VEjEbHIMFg842
+vT_FF
+VI0hBGJMVeod?CcSBJmEeo0
+r1
+31
+I1>AA@h3C@AiFmn]VCE@fH3
+w1579259969
+8T_FF.v
+FT_FF.v
+L0 1
+R1
+R2
+n@t_@f@f
+!s85 0
+!s100 >oK=h4KaHTEP7i]cSFMZK2
+vtb
+VV@Xn<HnSRM[I5c1?BH]3a3
+r1
+31
+Ie[ZDeGbNiOQhQzTEfC1]03
+w1579261120
+8tb.v
+Ftb.v
+L0 1
+R1
+R2
+!s85 0
+!s100 M>@0TkCm6Zl[:d3DJ[TFb2

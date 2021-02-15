@@ -1,0 +1,292 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/LaibaFatimaKhan/Lab11/Exercise
+vAdder
+Z1 !s110 1590862229
+!i10b 1
+!s100 BdNmjTh`Q:BAT0e4^[6zj1
+I?fN4;QT8;_mJiA<?gO?h92
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1586486552
+8Adder.v
+FAdder.v
+L0 1
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1590862229.000000
+Z5 !s107 RISCV.v|registerFile.v|Program_Counter.v|multiplexer.v|Instruction_Memory.v|instruction.v|immediate_data_extractor.v|Data_Memory.v|Control_Unit.v|ALU_Control.v|ALU_64_bit.v|Adder.v|tb.v|
+Z6 !s90 -reportprogress|300|tb.v|Adder.v|ALU_64_bit.v|ALU_Control.v|Control_Unit.v|Data_Memory.v|immediate_data_extractor.v|instruction.v|Instruction_Memory.v|multiplexer.v|Program_Counter.v|registerFile.v|RISCV.v|
+!s101 -O0
+!i113 1
+Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@adder
+vALU_64_bit
+R1
+!i10b 1
+!s100 _?<DEJZ:=B_P5mW^5lcMd0
+INiXMOMRGeOPE`8PVib@zC3
+R2
+R0
+w1581676074
+8ALU_64_bit.v
+FALU_64_bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+n@a@l@u_64_bit
+vALU_Control
+R1
+!i10b 1
+!s100 ?E8DaJMJF7YG1GYS?ESM^3
+IIzezMfPlm2nPdRR`WW_]o2
+R2
+R0
+w1586500159
+8ALU_Control.v
+FALU_Control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+n@a@l@u_@control
+vControl_Unit
+Z8 !s110 1590862230
+!i10b 1
+!s100 49hT4XKU;E];WP2dkIl@D0
+IIG5h6jfi[ioN;3>U;`;nz3
+R2
+R0
+w1590854851
+8Control_Unit.v
+FControl_Unit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+n@control_@unit
+vData_Memory
+R8
+!i10b 1
+!s100 l:?h<NAio`]DbNGKBjbA90
+IHd[zHPPkaHcRI5SK4zA=A0
+R2
+R0
+w1588253225
+8Data_Memory.v
+FData_Memory.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+n@data_@memory
+vimmediate_data_extractor
+R8
+!i10b 1
+!s100 5JF?jQ13AE9VfYnzX5;J03
+ILYC2UJ7ZFAokbz93:zWJ62
+R2
+R0
+w1588265926
+8immediate_data_extractor.v
+Fimmediate_data_extractor.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+vinstruction
+R8
+!i10b 1
+!s100 [9kB7`dFfdkb@^[RzF4=I2
+IMHQcIocC52a=hA`i<=W1k1
+R2
+R0
+w1590862152
+8instruction.v
+Finstruction.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+vInstruction_Memory
+R8
+!i10b 1
+!s100 OHf2GQ=S[D5lHc>c9`5DT3
+I1gaB:cFTI@D97zE?A_KG`0
+R2
+R0
+w1587103552
+8Instruction_Memory.v
+FInstruction_Memory.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+n@instruction_@memory
+vmultiplexer
+R8
+!i10b 1
+!s100 eaiokdm16dC1>;<>UE>1e1
+I<<aS8SHRPH>dmL>STI;9d1
+R2
+R0
+w1583236922
+8multiplexer.v
+Fmultiplexer.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+vProgram_Counter
+R8
+!i10b 1
+!s100 PO][7ghThabjX6n]kZ7;i3
+I1aEoIT>_^;=>9_;Ci0YBo3
+R2
+R0
+w1586486439
+8Program_Counter.v
+FProgram_Counter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+n@program_@counter
+vregisterFile
+R8
+!i10b 1
+!s100 z2XaD]OR3@ThoYVo7OUBW0
+I]FA_S1CK;GdhzK2D9>A;41
+R2
+R0
+w1588253119
+8registerFile.v
+FregisterFile.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+nregister@file
+vRISC_V_Processor
+R8
+!i10b 1
+!s100 D[Cl0lRo_2II<@0VCUF_G3
+I51INSQUb3j7V2l>9IT5Jg1
+R2
+R0
+w1588268709
+8RISCV.v
+FRISCV.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
+n@r@i@s@c_@v_@processor
+vtb
+R1
+!i10b 1
+!s100 G>^m44k1aGdZ_a7>@@YDP3
+I2EgRA8f7DZ]1HfO605Do80
+R2
+R0
+w1588267029
+8tb.v
+Ftb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7

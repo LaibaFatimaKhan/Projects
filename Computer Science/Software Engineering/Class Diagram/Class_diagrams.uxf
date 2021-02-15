@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>536</y>
+      <w>248</w>
+      <h>328</h>
+    </coordinates>
+    <panel_attributes>KWG_member
+--
+--
++KWG_member()
++CreateNewTab(tab: Tab): void
++AddSubTab(maintab: Tab, subtab: Tab): void
++AddStudent(student: CS_Student): void
++RemoveStudent(student: CS_Student): void
++AddFaculty(faculty: CS_Faulty): void
++RemoveFaculty(faculty: CS_Faculty): void
++PublishTab(tab: Tab): void
++CreateTask(task: Task): void
++DeleteTask(task: Task): void
++CreateGroup(students[1…n]: CS_Students): void
++AddAnnouncement(ancmt: Announcement): void
++EditAnnouncement(ancmt: Announcement): void
++DeleteAnnouncement(ancmt: Announcement): void
++EditDashboard(): void
++EditOverview(): void
++AddResource(res: Resource): void
++EditResource(res: Resource): void
++DeleteResource(res: Resource): void
++AddEvent(event: Event): void
++DeleteEvent(event: Event): void
++EditEvent(event: Event): void
++CreateGradebook(gradebk: Gradebook): void
++ShareGradebook(gradebk: Gradebook): void
++EditGradebook(gradebk: Gradebook): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>24</x>
+      <y>240</y>
+      <w>176</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-UserID: string
+-UserPassword: string
+-FirstName: string
+-LastName: string
+-UserDesignaton: string(enumerate: faculty, std, staff etc)
+--
++User(ID: string, password: string, fname: string, lname: string, designaton: string)
++Login(user: User): void
++Logout(): void
++ReceiveNotifications(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>232</x>
+      <y>216</y>
+      <w>216</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>CS_Students
+--
+-Batch: int
+-IsEligibleforKaavish: bool
+-InGroup: StudentGroup
+--
++CS_Students(ID: string, pwd: string, fname: string, lname: string,  batch: int, group:Student_Group)
++ViewTasks(task: Task): void
++EditTask(task: Task): void
++SubmitTask():void
++ViewAnnouncements(ancmt: Announcement): void
++ViewOverview(): void
++ViewSiteinfo(): void
++ViewDashboard(): void
++ViewResources(res: Resource): void
++ViewCalendar(): void
++ViewGradebook(gradebk: Gradebook): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>432</y>
+      <w>200</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>StudentGroup
+--
+-GroupID: int
+-NumOfMembers: int
+-Students[1...n]: CS_Student 
+–Supervisor: Supervisor
+–GradingPanel: GradingPanel
+--
++Student_Group(students[1…n]: CS_Student, members: int, supervisor: Supervisor)
++ViewMembers(): void
++AccessDashboard(): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>224</x>
+      <y>496</y>
+      <w>248</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes>CS_Faculty
+--
+-IsKWGMember: bool
+-InGradingPanels[1…n]: GradingPanel
+-InGradingPanelsOf[1…n]: StudentGroup
+-IsSupevisorOf[1…n]: StudentGroup
+
+--
++CS_Faculty(ID: string, pwd: string, fname: string, lname: string)
++ViewTasks(tasks: Tasks): void 
++EditTask(tasks: Tasks): void
++SubmitTask(tasks: Tasks): void
++AcceptInvite(): void
++RejectInvite(): void
++ViewAnnouncement(ancmt: Announcemennt): void
++ViewOverview():
++ViewSiteinfo():
++ViewDashboard(): void
++ViewResource(res: Resource): void
++ViewCalendar():
++ViewGradebook(gradebk: Gradebook): void
++ViewRoster(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>368</x>
+      <y>104</y>
+      <w>200</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>GradingPanel
+--
+-GradingPanelID: int
+-GradingPanelMembers[1…n]: GradingPanelMember
+-AssignedToGroup: StudentGroup
+
+--
++GradingPanel(members[1…n]: GradingPanelMember)
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>472</x>
+      <y>360</y>
+      <w>288</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Supervisor
+--
+-AssignedToGroups[1…n]: StudentGroup
+--
++Supervisor(-AssignedToGroups[1…n]: StudentGroup)
++AccessDashboard(): void
++EditGradebook(gradebk: Gradebook): void
++SubmitGradebook(gradebk: Gradebook): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>968</x>
+      <y>224</y>
+      <w>208</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>LMS
+--
+-Title: string
+-TabsList[1…n]: Tabs
+-Announcements[1…n]: Announcement
+-Tasks[1…n]: Task
+-Resources[1…n]: Resource
+-SiteLink: URL
+-Groups[1…n]: StudentGroup
+
+--
++LMS (title: string, sitelink: URL)
++AuthenticateChanges(): void
++AuthenticateTransfer(): void
++Save(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>744</x>
+      <y>496</y>
+      <w>296</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>Kaavish
+--
+-Site: LMS
+-Admin[1…n]: KWG_member
+-Term: string
+-TabsList[1...n]: Tab
+-StudentsList[1...n]: CS_Student
+-FacultyList[1...n]: CS_Faculty
+
+--
++Kaavish(title: string, tabs[1...n]: Tab, term: string)
++AddFaculty(faculty: CS_Faculty): void
++RemoveFaculty(faculty:CS_Faculty): void
++AddStudent(student: CS_Student): void
++RemoveStudent(student: CS_Student): void
++AddTab(tab: Tab): void
++RemoveTab(tab: Tab): void
++OpenTab(tab: Tab): void
++Display(): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>768</x>
+      <y>240</y>
+      <w>192</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>DashboardMember
+--
+-DashboardID: int
+-Students: StudentGroup
+-Supervisor: Supervisor
+-KWG[1…n]: KWG_member
+--
++DashboardMember()
++CreateEntry(entry: Entry): void
++EditEntry(entry: Entry): void
++DeleteEntry(entry: Entry): void
++CreateNote(note: Note): void
++EditNote(note: Note): void
++DeleteNote(note: Note): void
++SearchNote(name: string): void	
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1448</x>
+      <y>144</y>
+      <w>264</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Tab
+--
+-Title: string
+-Description: string
+-TabLink: URL
+--
++Tab(Title: string, Description: string, TabLink: URL)
++Display(): virtual void
++EditDescription(Text: string): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1744</x>
+      <y>248</y>
+      <w>264</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>SiteInfoTab
+--
+-AcademicTerm: string
+-SiteLink: URL
+-Admin[1…n]: KWG_member
+--
++SiteInfoTab(Title: string, Description: string, TabLink: URL)
++SetAcademicTerm(AcademicTerm: string): void
++GetAcademicTerm(): string
++SetSiteAdmin(admin[1...n]: KWG_member): void
++GetSiteAdmin(): KWG_member
++SetSiteLink(sitelink: URL): void
++GetSiteLink():URL
++Display(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1384</x>
+      <y>288</y>
+      <w>264</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>OverviewTab
+--
+-AnnouncementsList[1…n]: Announcement
+-DeadlinesList[1…n]: Event
+-Message: string
+--
++OverviewTab(title: string, description: string, tablink: URL)
++EditMessage():void
++Display(): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1544</x>
+      <y>456</y>
+      <w>264</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>AnnouncementsTab
+--
+-AnnouncementsList[1…n]: Announcement
+--
++AnnouncementsTab(title: string, desc: string, tab: URL, ancmt[1…n]: Announcement)
++Display(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1344</x>
+      <y>560</y>
+      <w>264</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>ResourcesTab
+--
+-ResourceList[1…n]: Resource
+--
++ResourcesTab(title: string, desc: string, tablink: URL, resources[1…n]: Resource)
++Display(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1240</x>
+      <y>424</y>
+      <w>256</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>TasksTab
+--
+-TasksList[1…n]: Task
+--
++TasksTab(title: string, description: string, tablink: URL, taskslist[1…n]: Task)
++Display(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>1048</y>
+      <w>360</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>Gradebook
+--
+-Title: string
+-Description: string
+-CreatedBy: KWG_member
+-LastModified:datetime
+-AssignedTo: StudentGroup
+
+--
+
++Gradebook(title: string, desc: string, createdby: KWG_member, assignto: StudentGroup)
++AddCategories(): void
++AddWeights(): void
++AddReceipients(fac: CS_Faculty): void
++SaveInDatabase(): void
++Share(user[1…n]: User): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1672</x>
+      <y>592</y>
+      <w>264</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>GradebookTab
+--
+-GradebookList[1…n]: Gradebook
+-Admin[1…n]: KWG_member
+-Members: StudentGroup
+--
++GradebookTab()
++Display(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1840</x>
+      <y>440</y>
+      <w>352</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>RosterTab
+--
+-Faculty[1…n]: CS_Faculty
+-Students[1…n]: CS_Student
+--
++RosterTab(title: string, desc: string, tablink: URL, groups[1…n]: StudentGroup)
++AddStudent(student: CS_Student): void
++RemoveStudent(student: CS_Student): void
++AddFaculty(faculty: CS_Faculty): void
++RemoveFaculty(faculty: CS_Faculty): void
++Display(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1976</x>
+      <y>600</y>
+      <w>264</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>CalendarTab
+--
+-Events[1…n]: Event
+--
++CalendarTab(title: string, desc: string, tablink: URL, events[1…n]: Event)
++Display(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1944</x>
+      <y>688</y>
+      <w>368</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>DashboardTab
+--
+-Members: User
+-Admin[1…n]: KWG_member
+-Visibility: bool
+-LastModified: datetime
+--
++DashboardTab(members: User, admin[1…n]: KWG_member)
++UpdateFeed(): void
++Note(): void
++Entry(): void
++AddMember(user: User)void
++RemoveMember(user: User)void
++SaveInDatabase(): void
++Display(): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>1128</y>
+      <w>264</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Entry
+--
+-Title: string
+-Description: string
+-CreatedBy: User
+-LastModified:datetime
+-AssignedTo: StudentGroup
+--
++Entry(title: string, description: string)
++Edit(): void
++Delete(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1648</x>
+      <y>760</y>
+      <w>288</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Task
+--
+-Title: string
+-Attachments[1…n]: file
+-Description: string
+-Deadline: datetime
+-SubmissionTime: datetime  
+-LastModified: datetime  
+-ModifiedBy: CS_Faculty
+--
++Task(title: string, addedby: CS_Faculty)
++EditDescription(text: string): void
++AddAttachments(filename: string): void
++DeleteAttachments(filename: string): void
++SetDeadline(dealine: datetime): void
++Share(user[1…n]: User): void
++SaveDraft(): void
++Submit(): void
++SaveInDatabase(): void
++DownloadAttachments(filename: string): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>472</x>
+      <y>992</y>
+      <w>264</w>
+      <h>248</h>
+    </coordinates>
+    <panel_attributes>Note
+--
+-Title: string
+-Description: string
+–CreatedBy: KWG_member
+-LastModified:datetime
+-AssignedTo: User
+–Checklist: string
+-Labels: void
+-Attachments[1…n]: string
+-Comments[1…n]: strings
+
+--
++Note(title: string, description: string)
++Edit(): void
++Delete(): void
++AddAttachment(filename: string): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1592</x>
+      <y>1088</y>
+      <w>264</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>Event
+--
+-Title: string
+-Date: date
+-Time: time
+-AddedBy: User
+-Description: string
+--
++Event(Title: string, Date: date, Time: time, AddedBy: User)
++EditDescription(Text: string): void
++SaveInDatabase(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>912</x>
+      <y>888</y>
+      <w>560</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Announcement
+--
+-Title: string
+-Description: string
+-LastModified: datetime
+-ModifiedBy: CS_Faculty
+--
++Announcement(title: string, description: string, addedby: CS_Faculty)
++EditDescription(text: string): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1232</x>
+      <y>704</y>
+      <w>264</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Resource
+--
+-Title: string
+-Attachment: file
+-LastModified:datetime
+-ModifiedBy: CS_Faculty
+--
++Resource(title: string)
++ModifyAttachment(filename: string): void
++Download(): void
++SaveInDatabase(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>552</x>
+      <y>232</y>
+      <w>200</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>GradingPanelMember
+--
+-BelongsTo: GradingPanel*
+-AssignedToGroup: StudentPanel*
+--
++GradingPanelMember()
++ReceiveGradebook(gradebk: Gradebook): void
++EditGradebook(gradebk: Gradebook): void
++SubmitGradebook(gradebk: Gradebook): void
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/LaibaFatimaKhan/Lab06/Task1
+vmultiplexer
+Z1 !s110 1583236562
+!i10b 1
+!s100 9]nh2^E0>;KRLH9FGK=1i3
+Ia5KZ75X^GHTBhSl]AXC`?2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1583235005
+8multiplexer.v
+Fmultiplexer.v
+L0 1
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1583236562.000000
+Z5 !s107 multiplexer.v|tb.v|
+Z6 !s90 -reportprogress|300|tb.v|multiplexer.v|
+!s101 -O0
+!i113 1
+Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vtb
+R1
+!i10b 1
+!s100 a:[:SH`625C7:JDN6:E@E2
+IGXg@^Kz1jKP<57ARDld530
+R2
+R0
+w1583235447
+8tb.v
+Ftb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!s101 -O0
+!i113 1
+R7
